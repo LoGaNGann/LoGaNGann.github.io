@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    color: #fff;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/background5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar-bottom {
+    border-bottom: 1px solid white !important;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #5f85f5;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 90px;
+    margin-top: 80px;
+}
+
+button {
+    width: 250px;
+    padding: 17px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #1850f5;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 24px;
+}
+
+span {
+    background: #1850f5;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+
+
+.banner2 {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/space2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner2 h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 72px;
+}
+
+.author-container {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.author img {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.author-description {
+    max-width: 900px;
+}
+
+.author-description h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.author-description p {
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.contanct-box {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.contanct-box img {
+    width: 32px;
+    margin: 0 10px;
+}
+
+.contanct-box h2 {
+    font-size: 38px;
+    color: #fff;
+}
+
+.google-maps-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.google-maps h2 {
+    font-size: 36px;
+    text-align: center;
+    margin: 30px 0;
+    color: #fff;
+}
+
+.story {
+    padding-bottom: 50px;
+}
+
+.story h1 {
+    text-align: center;
+    font-size: 72px;
+    color: #fff;
+}
+
+.story p {
+    font-size: 36px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.vidgame {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.line-between {
+    border-bottom: 1px solid white !important;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.screenshots {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.screenshots .images {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.screenshots .images img {
+    width: 30%;
+    margin: 10px 10px;
+    transition: .3s;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.screenshots .images img:hover {
+    opacity: 0.8;
+    transition: .7s;
+}
+
+.text {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 25px;
+    max-width: 800px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 250px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.development p{
+    width: 90%;
+    margin: 10px auto;
+    font-size: 24px;
+    
+}

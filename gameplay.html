@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="images/logo2.png" type="image/x-icon">
+    
+    <title>Gameplay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=VT323&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="banner2">
+        <div class="navbar navbar-bottom">
+            <a href="index.html"><img src="images/logo2.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="#">Gameplay</a></li>
+                <li><a href="development.html">Development</a></li>
+            </ul>
+        </div>
+
+        <h1>Gameplay</h1>
+
+        <div class="vidgame">
+            <iframe width="1000" height="500" src="https://www.youtube.com/embed/VuyTmZEsQBY?si=aNKnfbclakkByxOk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="line-between"></div>
+        <div class="screenshots">
+            <h1>Screenshots</h1>
+            <div class="images">
+                <img id="myImg1" src="images/screen1.png" alt="">
+                <img id="myImg2" src="images/screen2.png" alt="">
+                <img id="myImg3" src="images/screen3.png" alt="">
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <img class="modal-content" id="img01">
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img1 = document.getElementById("myImg1");
+            var img2 = document.getElementById("myImg2");
+            var img3 = document.getElementById("myImg3");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+
+            img1.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            img2.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            img3.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            modal.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+</body>
+
+</html>
