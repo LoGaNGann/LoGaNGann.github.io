@@ -55,26 +55,23 @@
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
 			<li><a href="story.html">Story</a></li>
-			<li><a href="gameplay.html">Gameplay</a></li>
-			<li><a href="development.html">Development</a></li>
 		</ul>
 	</div>
 
 	<div id="gameContainer" style="margin-top: 200px;">
 		<canvas id="unity-canvas" data-pixel-art="true"></canvas>
-		<script src="Build/PussyStrikeOleg.loader.js"></script>
+		<script src="Build/TypingGameBuild.loader.js"></script>
 		<script>
 			var canvas = document.querySelector("#unity-canvas");
 			var config = {
-				dataUrl: "Build/PussyStrikeOleg.data",
-				frameworkUrl: "Build/PussyStrikeOleg.framework.js",
-				codeUrl: "Build/PussyStrikeOleg.wasm",
+				dataUrl: "Build/TypingGameBuild.data",
+				frameworkUrl: "Build/TypingGameBuild.framework.js",
+				codeUrl: "Build/TypingGameBuild.wasm",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "DarkMoon Studio",
-				productName: "PussyStrike",
-				productVersion: "2.2",
+				productName: "Kimgdom",
+				productVersion: "1.0",
 			};
 			var scaleToFit;
 			try {
